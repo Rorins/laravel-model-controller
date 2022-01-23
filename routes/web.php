@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+//Al posto della funzione uso nome del controller e il metodo della classe che è @index
+Route::get('/', 'HomeController@index')->name('home');
